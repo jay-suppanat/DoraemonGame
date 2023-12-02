@@ -16,6 +16,7 @@
 		653FA8092B1BA0860046F3E9 /* DoraemonGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8082B1BA0860046F3E9 /* DoraemonGameTests.swift */; };
 		653FA8132B1BA0860046F3E9 /* DoraemonGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */; };
 		653FA8152B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */; };
+		656E2D422B1BA50D0033890F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D412B1BA50D0033890F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		653FA80E2B1BA0860046F3E9 /* DoraemonGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoraemonGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITests.swift; sourceTree = "<group>"; };
 		653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		656E2D412B1BA50D0033890F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */,
 				653FA7FC2B1BA0850046F3E9 /* LaunchScreen.storyboard */,
 				653FA7FF2B1BA0850046F3E9 /* Info.plist */,
+				656E2D412B1BA50D0033890F /* Constants.swift */,
 			);
 			path = DoraemonGame;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				653FA7F62B1BA0840046F3E9 /* ViewController.swift in Sources */,
 				653FA7F22B1BA0840046F3E9 /* AppDelegate.swift in Sources */,
 				653FA7F42B1BA0840046F3E9 /* SceneDelegate.swift in Sources */,
+				656E2D422B1BA50D0033890F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
