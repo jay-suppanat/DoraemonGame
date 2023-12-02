@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653FA7F22B1BA0840046F3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA7F12B1BA0840046F3E9 /* AppDelegate.swift */; };
+		653FA7F42B1BA0840046F3E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */; };
+		653FA7F62B1BA0840046F3E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA7F52B1BA0840046F3E9 /* ViewController.swift */; };
+		653FA7F92B1BA0840046F3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653FA7F72B1BA0840046F3E9 /* Main.storyboard */; };
+		653FA7FB2B1BA0850046F3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */; };
+		653FA7FE2B1BA0850046F3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653FA7FC2B1BA0850046F3E9 /* LaunchScreen.storyboard */; };
+		653FA8092B1BA0860046F3E9 /* DoraemonGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8082B1BA0860046F3E9 /* DoraemonGameTests.swift */; };
+		653FA8132B1BA0860046F3E9 /* DoraemonGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */; };
+		653FA8152B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		653FA8052B1BA0860046F3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653FA7E62B1BA0840046F3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653FA7ED2B1BA0840046F3E9;
+			remoteInfo = DoraemonGame;
+		};
+		653FA80F2B1BA0860046F3E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653FA7E62B1BA0840046F3E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653FA7ED2B1BA0840046F3E9;
+			remoteInfo = DoraemonGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		653FA7EE2B1BA0840046F3E9 /* DoraemonGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoraemonGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		653FA7F12B1BA0840046F3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		653FA7F52B1BA0840046F3E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		653FA7F82B1BA0840046F3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		653FA7FD2B1BA0850046F3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		653FA7FF2B1BA0850046F3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653FA8042B1BA0860046F3E9 /* DoraemonGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoraemonGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		653FA8082B1BA0860046F3E9 /* DoraemonGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameTests.swift; sourceTree = "<group>"; };
+		653FA80E2B1BA0860046F3E9 /* DoraemonGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoraemonGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITests.swift; sourceTree = "<group>"; };
+		653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653FA7EB2B1BA0840046F3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA8012B1BA0860046F3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA80B2B1BA0860046F3E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653FA7E52B1BA0840046F3E9 = {
+			isa = PBXGroup;
+			children = (
+				653FA7F02B1BA0840046F3E9 /* DoraemonGame */,
+				653FA8072B1BA0860046F3E9 /* DoraemonGameTests */,
+				653FA8112B1BA0860046F3E9 /* DoraemonGameUITests */,
+				653FA7EF2B1BA0840046F3E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653FA7EF2B1BA0840046F3E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653FA7EE2B1BA0840046F3E9 /* DoraemonGame.app */,
+				653FA8042B1BA0860046F3E9 /* DoraemonGameTests.xctest */,
+				653FA80E2B1BA0860046F3E9 /* DoraemonGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653FA7F02B1BA0840046F3E9 /* DoraemonGame */ = {
+			isa = PBXGroup;
+			children = (
+				653FA7F12B1BA0840046F3E9 /* AppDelegate.swift */,
+				653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */,
+				653FA7F52B1BA0840046F3E9 /* ViewController.swift */,
+				653FA7F72B1BA0840046F3E9 /* Main.storyboard */,
+				653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */,
+				653FA7FC2B1BA0850046F3E9 /* LaunchScreen.storyboard */,
+				653FA7FF2B1BA0850046F3E9 /* Info.plist */,
+			);
+			path = DoraemonGame;
+			sourceTree = "<group>";
+		};
+		653FA8072B1BA0860046F3E9 /* DoraemonGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				653FA8082B1BA0860046F3E9 /* DoraemonGameTests.swift */,
+			);
+			path = DoraemonGameTests;
+			sourceTree = "<group>";
+		};
+		653FA8112B1BA0860046F3E9 /* DoraemonGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */,
+				653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */,
+			);
+			path = DoraemonGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653FA7ED2B1BA0840046F3E9 /* DoraemonGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653FA8182B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGame" */;
+			buildPhases = (
+				653FA7EA2B1BA0840046F3E9 /* Sources */,
+				653FA7EB2B1BA0840046F3E9 /* Frameworks */,
+				653FA7EC2B1BA0840046F3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoraemonGame;
+			productName = DoraemonGame;
+			productReference = 653FA7EE2B1BA0840046F3E9 /* DoraemonGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		653FA8032B1BA0860046F3E9 /* DoraemonGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653FA81B2B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGameTests" */;
+			buildPhases = (
+				653FA8002B1BA0860046F3E9 /* Sources */,
+				653FA8012B1BA0860046F3E9 /* Frameworks */,
+				653FA8022B1BA0860046F3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653FA8062B1BA0860046F3E9 /* PBXTargetDependency */,
+			);
+			name = DoraemonGameTests;
+			productName = DoraemonGameTests;
+			productReference = 653FA8042B1BA0860046F3E9 /* DoraemonGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		653FA80D2B1BA0860046F3E9 /* DoraemonGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653FA81E2B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGameUITests" */;
+			buildPhases = (
+				653FA80A2B1BA0860046F3E9 /* Sources */,
+				653FA80B2B1BA0860046F3E9 /* Frameworks */,
+				653FA80C2B1BA0860046F3E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653FA8102B1BA0860046F3E9 /* PBXTargetDependency */,
+			);
+			name = DoraemonGameUITests;
+			productName = DoraemonGameUITests;
+			productReference = 653FA80E2B1BA0860046F3E9 /* DoraemonGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		653FA7E62B1BA0840046F3E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					653FA7ED2B1BA0840046F3E9 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					653FA8032B1BA0860046F3E9 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 653FA7ED2B1BA0840046F3E9;
+					};
+					653FA80D2B1BA0860046F3E9 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 653FA7ED2B1BA0840046F3E9;
+					};
+				};
+			};
+			buildConfigurationList = 653FA7E92B1BA0840046F3E9 /* Build configuration list for PBXProject "DoraemonGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 653FA7E52B1BA0840046F3E9;
+			productRefGroup = 653FA7EF2B1BA0840046F3E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653FA7ED2B1BA0840046F3E9 /* DoraemonGame */,
+				653FA8032B1BA0860046F3E9 /* DoraemonGameTests */,
+				653FA80D2B1BA0860046F3E9 /* DoraemonGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		653FA7EC2B1BA0840046F3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653FA7FE2B1BA0850046F3E9 /* LaunchScreen.storyboard in Resources */,
+				653FA7FB2B1BA0850046F3E9 /* Assets.xcassets in Resources */,
+				653FA7F92B1BA0840046F3E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA8022B1BA0860046F3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA80C2B1BA0860046F3E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		653FA7EA2B1BA0840046F3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653FA7F62B1BA0840046F3E9 /* ViewController.swift in Sources */,
+				653FA7F22B1BA0840046F3E9 /* AppDelegate.swift in Sources */,
+				653FA7F42B1BA0840046F3E9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA8002B1BA0860046F3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653FA8092B1BA0860046F3E9 /* DoraemonGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FA80A2B1BA0860046F3E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653FA8132B1BA0860046F3E9 /* DoraemonGameUITests.swift in Sources */,
+				653FA8152B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653FA8062B1BA0860046F3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 653FA7ED2B1BA0840046F3E9 /* DoraemonGame */;
+			targetProxy = 653FA8052B1BA0860046F3E9 /* PBXContainerItemProxy */;
+		};
+		653FA8102B1BA0860046F3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 653FA7ED2B1BA0840046F3E9 /* DoraemonGame */;
+			targetProxy = 653FA80F2B1BA0860046F3E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		653FA7F72B1BA0840046F3E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653FA7F82B1BA0840046F3E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		653FA7FC2B1BA0850046F3E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653FA7FD2B1BA0850046F3E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		653FA8162B1BA0860046F3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		653FA8172B1BA0860046F3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653FA8192B1BA0860046F3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoraemonGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		653FA81A2B1BA0860046F3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoraemonGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		653FA81C2B1BA0860046F3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoraemonGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoraemonGame";
+			};
+			name = Debug;
+		};
+		653FA81D2B1BA0860046F3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoraemonGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoraemonGame";
+			};
+			name = Release;
+		};
+		653FA81F2B1BA0860046F3E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoraemonGame;
+			};
+			name = Debug;
+		};
+		653FA8202B1BA0860046F3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JWF54HF97T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppanat.DoraemonGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoraemonGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		653FA7E92B1BA0840046F3E9 /* Build configuration list for PBXProject "DoraemonGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653FA8162B1BA0860046F3E9 /* Debug */,
+				653FA8172B1BA0860046F3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653FA8182B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653FA8192B1BA0860046F3E9 /* Debug */,
+				653FA81A2B1BA0860046F3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653FA81B2B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653FA81C2B1BA0860046F3E9 /* Debug */,
+				653FA81D2B1BA0860046F3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653FA81E2B1BA0860046F3E9 /* Build configuration list for PBXNativeTarget "DoraemonGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653FA81F2B1BA0860046F3E9 /* Debug */,
+				653FA8202B1BA0860046F3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 653FA7E62B1BA0840046F3E9 /* Project object */;
+}
