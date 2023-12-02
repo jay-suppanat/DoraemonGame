@@ -68,8 +68,8 @@ class ViewController: UIViewController {
       Haptic.impact(.heavy).generate()
       if self.cardDeck.cardDeck.kingCard.isEmpty {
           let alert = UIAlertController(
-              title: "Game End 🎉",
-              message: "Press Reset button to fill card deck.",
+              title: Constant.Alert.gameEnd,
+              message: Constant.Alert.pleaseReset,
               preferredStyle: UIAlertController.Style.alert)
           alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
           self.present(alert, animated: true, completion: nil)
@@ -128,6 +128,8 @@ class ViewController: UIViewController {
       self.cardView.setImage(UIImage(named: "backCard"), for: .normal)
       self.randomButton.setTitle("Random", for: .normal)
       self.resetButton.setTitle("Reset", for: .normal)
+      self.randomButton.setTitleColor(.white, for: .normal)
+      self.resetButton.setTitleColor(.white, for: .normal)
       self.randomButton.layer.cornerRadius = 20.0
       self.resetButton.layer.cornerRadius = 20.0
       self.randomButton.backgroundColor = UIColor.systemGreen
