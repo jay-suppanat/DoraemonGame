@@ -18,6 +18,8 @@
 		653FA8152B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */; };
 		656E2D422B1BA50D0033890F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D412B1BA50D0033890F /* Constants.swift */; };
 		656E2D462B1BA72E0033890F /* Haptica in Frameworks */ = {isa = PBXBuildFile; productRef = 656E2D452B1BA72E0033890F /* Haptica */; };
+		656E2D492B1BA8450033890F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D482B1BA8450033890F /* CardModel.swift */; };
+		656E2D4C2B1BA9840033890F /* AppCallers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D4B2B1BA9840033890F /* AppCallers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		653FA8122B1BA0860046F3E9 /* DoraemonGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITests.swift; sourceTree = "<group>"; };
 		653FA8142B1BA0860046F3E9 /* DoraemonGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		656E2D412B1BA50D0033890F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		656E2D482B1BA8450033890F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		656E2D4B2B1BA9840033890F /* AppCallers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCallers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				653FA7F52B1BA0840046F3E9 /* ViewController.swift */,
 				653FA7F72B1BA0840046F3E9 /* Main.storyboard */,
 				653FA7FC2B1BA0850046F3E9 /* LaunchScreen.storyboard */,
+				656E2D472B1BA8370033890F /* Model */,
 				656E2D432B1BA5D10033890F /* Support File */,
 				653FA7FF2B1BA0850046F3E9 /* Info.plist */,
 			);
@@ -136,8 +141,17 @@
 				653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */,
 				656E2D412B1BA50D0033890F /* Constants.swift */,
 				653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */,
+				656E2D4B2B1BA9840033890F /* AppCallers.swift */,
 			);
 			path = "Support File";
+			sourceTree = "<group>";
+		};
+		656E2D472B1BA8370033890F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				656E2D482B1BA8450033890F /* CardModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +295,8 @@
 				653FA7F22B1BA0840046F3E9 /* AppDelegate.swift in Sources */,
 				653FA7F42B1BA0840046F3E9 /* SceneDelegate.swift in Sources */,
 				656E2D422B1BA50D0033890F /* Constants.swift in Sources */,
+				656E2D4C2B1BA9840033890F /* AppCallers.swift in Sources */,
+				656E2D492B1BA8450033890F /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

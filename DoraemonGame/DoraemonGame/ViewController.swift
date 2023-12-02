@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Haptica
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    self.setupViewController()
   }
 
   // MARK: Internal
@@ -29,96 +30,31 @@ class ViewController: UIViewController {
           Haptic.impact(.heavy).generate()
           switch self.cardName {
           case let str where str.contains("2"):
-              let alert = UIAlertController(
-                  title: "Your Card: 2",
-                  message: Constant.Card.command2,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "2", message: Constant.Command.command2, buttonTitle: "OK"), animated: true)
           case let str where str.contains("3"):
-              let alert = UIAlertController(
-                  title: "Your Card: 3",
-                  message: Constant.Card.command3,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "3", message: Constant.Command.command3, buttonTitle: "OK"), animated: true)
           case let str where str.contains("4"):
-              let alert = UIAlertController(
-                  title: "Your Card: 4",
-                  message: Constant.Card.command4,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "4", message: Constant.Command.command4, buttonTitle: "OK"), animated: true)
           case let str where str.contains("5"):
-              let alert = UIAlertController(
-                  title: "Your Card: 5",
-                  message: Constant.Card.command5,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "5", message: Constant.Command.command5, buttonTitle: "OK"), animated: true)
           case let str where str.contains("6"):
-              let alert = UIAlertController(
-                  title: "Your Card: 6",
-                  message: Constant.Card.command6,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "6", message: Constant.Command.command6, buttonTitle: "OK"), animated: true)
           case let str where str.contains("7"):
-              let alert = UIAlertController(
-                  title: "Your Card: 7",
-                  message: Constant.Card.command7,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "7", message: Constant.Command.command7, buttonTitle: "OK"), animated: true)
           case let str where str.contains("8"):
-              let alert = UIAlertController(
-                  title: "Your Card: 8",
-                  message: Constant.Card.command8,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "8", message: Constant.Command.command8, buttonTitle: "OK"), animated: true)
           case let str where str.contains("9"):
-              let alert = UIAlertController(
-                  title: "Your Card: 9",
-                  message: Constant.Card.command9,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "9", message: Constant.Command.command9, buttonTitle: "OK"), animated: true)
           case let str where str.contains("0"):
-              let alert = UIAlertController(
-                  title: "Your Card: 10",
-                  message: Constant.Card.command10,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "0", message: Constant.Command.command10, buttonTitle: "OK"), animated: true)
           case let str where str.contains("J"):
-              let alert = UIAlertController(
-                  title: "Your Card: J",
-                  message: Constant.Card.commandJ,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "J", message: Constant.Command.commandJ, buttonTitle: "OK"), animated: true)
           case let str where str.contains("Q"):
-              let alert = UIAlertController(
-                  title: "Your Card: Q",
-                  message: Constant.Card.commandQ,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "Q", message: Constant.Command.commandQ, buttonTitle: "OK"), animated: true)
           case let str where str.contains("K"):
-              let alert = UIAlertController(
-                  title: "Your Card: K",
-                  message: Constant.Card.commandK,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "K", message: Constant.Command.commandK, buttonTitle: "OK"), animated: true)
           case let str where str.contains("A"):
-              let alert = UIAlertController(
-                  title: "Your Card: A",
-                  message: Constant.Card.commandA,
-                  preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+            self.present(AppCallers().showCommandAlert(title: "A", message: Constant.Command.commandA, buttonTitle: "OK"), animated: true)
           default:
               print("🚨 showCommand Function Error")
           }
@@ -136,7 +72,7 @@ class ViewController: UIViewController {
   func randomCard(_ sender: UIButton) {
       Haptic.impact(.heavy).generate()
       if self.cardDeck.cardDeck.kingCard.isEmpty {
-          self.cardView.imageView?.image = UIImage(named: "outOfKing")
+//          self.cardView.imageView?.image = UIImage(named: "outOfKing")
           let alert = UIAlertController(
               title: "Game End 🎉",
               message: "Press Reset button to fill card deck.",
@@ -180,8 +116,6 @@ class ViewController: UIViewController {
       self.cardDeck.cardDeck.cardDeck.removeAll()
       self.cardDeck.cardDeck.cardDeck = Constant.Card.mainCardDeck
       self.cardDeck.cardDeck.kingCard = Constant.Card.mainKingCard
-      print("⏪ Reset Card Deck: \(self.cardDeck.cardDeck.cardDeck.count)")
-      print("⏪ Reset King Card Deck\(self.cardDeck.cardDeck.kingCard.count)")
   }
 
   func randomCard() -> String {
@@ -200,6 +134,7 @@ class ViewController: UIViewController {
   }
 
   func setupViewController() {
+    self.view.backgroundColor = .black
       self.cardView.setImage(UIImage(named: "backCard"), for: .normal)
       self.randomButton.setTitle("Random", for: .normal)
       self.resetButton.setTitle("Reset", for: .normal)
@@ -207,7 +142,6 @@ class ViewController: UIViewController {
       self.resetButton.layer.cornerRadius = 20.0
       self.randomButton.backgroundColor = UIColor.systemGreen
       self.resetButton.backgroundColor = UIColor.systemRed
-      self.title = Constant.Project.randomCard
       self.navigationController?.navigationBar.prefersLargeTitles = true
       self.navigationItem.largeTitleDisplayMode = .always
   }

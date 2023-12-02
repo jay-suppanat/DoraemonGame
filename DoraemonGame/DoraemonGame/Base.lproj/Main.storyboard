@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcZ-y9-P1D">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -17,16 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghP-8u-bh6">
-                                <rect key="frame" x="16" y="59" width="361" height="490"/>
+                                <rect key="frame" x="16" y="103" width="361" height="490"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="490" id="W4X-7A-RCz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backCard"/>
+                                <connections>
+                                    <action selector="showCommand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gd-4p-BVd"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HLz-h4-knU">
-                                <rect key="frame" x="40" y="594" width="313" height="110"/>
+                                <rect key="frame" x="40" y="638" width="313" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORP-tT-NRH">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="50"/>
@@ -37,6 +40,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="randomCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAy-Jp-6CT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l1-pz-lH1">
                                         <rect key="frame" x="0.0" y="60" width="313" height="50"/>
@@ -47,6 +53,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="resetCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4L-7O-ci0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -62,6 +71,7 @@
                             <constraint firstItem="ghP-8u-bh6" firstAttribute="leading" secondItem="sBC-4W-J5F" secondAttribute="leading" constant="16" id="xIq-yd-bsd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5OU-Za-Lfk"/>
                     <connections>
                         <outlet property="cardView" destination="ghP-8u-bh6" id="K3U-c8-Xxm"/>
                         <outlet property="randomButton" destination="ORP-tT-NRH" id="SPt-zb-0ra"/>
@@ -70,7 +80,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109" y="4"/>
+            <point key="canvasLocation" x="1034.3511450381679" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W12-cV-0lw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vcZ-y9-P1D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zqo-QA-NSd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ibC-Ai-LsJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0O-Rw-ABh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.63358778625954" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
