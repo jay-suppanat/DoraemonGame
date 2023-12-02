@@ -85,6 +85,8 @@ enum Constant {
 
   enum Alert {
     static let randomCardFirst = "Please random card first."
+    static let gameEnd = "Game End 🎉"
+    static let pleaseReset = "Press Reset button to restart game."
   }
 
 }

@@ -67,14 +67,12 @@ class ViewController: UIViewController {
   func randomCard(_ sender: UIButton) {
       Haptic.impact(.heavy).generate()
       if self.cardDeck.cardDeck.kingCard.isEmpty {
-//          self.cardView.imageView?.image = UIImage(named: "outOfKing")
           let alert = UIAlertController(
               title: "Game End 🎉",
               message: "Press Reset button to fill card deck.",
               preferredStyle: UIAlertController.Style.alert)
           alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
           self.present(alert, animated: true, completion: nil)
-          print("🙅🏻‍♂️👑 Out of King 🙅🏻‍♂️👑")
       } else {
           if self.isOpen {
               self.isOpen = false
@@ -88,9 +86,6 @@ class ViewController: UIViewController {
                   completion: nil)
           } else {
               let cardResult2 = self.randomCard()
-              print("🃏 Card Result: \(cardResult2)")
-              print("😍 Total Card Remaining: \(self.cardDeck.cardDeck.cardDeck.count) 😍")
-              print("👑 Total King Card Remaining: \(self.cardDeck.cardDeck.kingCard.count) 👑")
               self.isOpen = true
               let image = UIImage(named: cardResult2)
               self.cardView.setImage(image, for: .normal)
