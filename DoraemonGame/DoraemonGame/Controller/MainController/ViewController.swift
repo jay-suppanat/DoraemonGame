@@ -149,6 +149,7 @@ class ViewController: UIViewController {
     let addButton = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(addIconDidTap))
     addButton.tintColor = .white
     self.navigationItem.rightBarButtonItem = addButton
+    self.navigationItem.backButtonTitle = ""
   }
 
   @objc func addIconDidTap() {

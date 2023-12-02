@@ -11,11 +11,17 @@ class CommandTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+  // MARK: Internal
+
+    static var identifier: String {
+        String(describing: self)
     }
-    
+
+    static var nib: UINib {
+        UINib(nibName: identifier, bundle: nil)
+    }
+
+
 }
