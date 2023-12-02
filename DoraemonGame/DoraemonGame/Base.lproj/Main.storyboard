@@ -62,6 +62,11 @@
                             <constraint firstItem="ghP-8u-bh6" firstAttribute="leading" secondItem="sBC-4W-J5F" secondAttribute="leading" constant="16" id="xIq-yd-bsd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="ghP-8u-bh6" id="K3U-c8-Xxm"/>
+                        <outlet property="randomButton" destination="ORP-tT-NRH" id="SPt-zb-0ra"/>
+                        <outlet property="resetButton" destination="0l1-pz-lH1" id="HnL-88-1B3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
