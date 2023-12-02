@@ -83,4 +83,8 @@ enum Constant {
     static let commandA = "กินหมดแก้ว"
   }
 
+  enum Alert {
+    static let randomCardFirst = "Please random card first."
+  }
+
 }

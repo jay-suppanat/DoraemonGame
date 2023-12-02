@@ -59,12 +59,7 @@ class ViewController: UIViewController {
               print("🚨 showCommand Function Error")
           }
       } else {
-          let alert = UIAlertController(
-              title: "Alert 🤬",
-              message: "Please random card first.",
-              preferredStyle: UIAlertController.Style.alert)
-          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-          self.present(alert, animated: true, completion: nil)
+          self.present(AppCallers().showCommandAlert(title: "Alert 🤬", message: Constant.Alert.randomCardFirst, buttonTitle: "OK"), animated: true)
       }
   }
 
