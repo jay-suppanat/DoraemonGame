@@ -152,7 +152,8 @@ class ViewController: UIViewController {
   }
 
   @objc func addIconDidTap() {
-    print("Tap Add Icon")
+    let commandVC = CommandViewController(nibName: "CommandViewController", bundle: nil)
+    self.navigationController?.pushViewController(commandVC, animated: true)
   }
 
 

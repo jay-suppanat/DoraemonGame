@@ -89,4 +89,8 @@ enum Constant {
     static let pleaseReset = "Press Reset button to restart game."
   }
 
+  enum Title {
+    static let commandTitle = "Command👑"
+  }
+
 }
