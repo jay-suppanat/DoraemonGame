@@ -13,6 +13,7 @@ class CommandViewController: UIViewController {
         super.viewDidLoad()
       self.setupNavigationBar()
       self.setupTableView()
+      self.applyTheme()
     }
 
 // MARK: Internal
@@ -22,8 +23,20 @@ class CommandViewController: UIViewController {
 
 // MARK: Theme and UserInterface
 
+  func applyTheme() {
+    self.tableView.backgroundColor = .black
+    self.view.backgroundColor = .black
+  }
+
   func setupNavigationBar() {
+    if let navigationBar = navigationController?.navigationBar {
+               let titleAttributes: [NSAttributedString.Key: Any] = [
+                   .foregroundColor: UIColor.white, 
+               ]
+               navigationBar.titleTextAttributes = titleAttributes
+           }
     self.title = Constant.Title.commandTitle
+
   }
 
   func setupTableView() {
@@ -44,11 +57,12 @@ extension CommandViewController: UITableViewDelegate {
 
 extension CommandViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 13
+    return Constant.Wording.cardArray.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = self.tableView.dequeueReusableCell(withIdentifier: CommandTableViewCell.identifier, for: indexPath) as! CommandTableViewCell
+    cell.setupData(card: Constant.Wording.cardArray[indexPath.row])
     return cell
   }
   

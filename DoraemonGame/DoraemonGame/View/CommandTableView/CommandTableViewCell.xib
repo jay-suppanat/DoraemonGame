@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,17 +20,42 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NvZ-ib-jUJ">
                         <rect key="frame" x="10" y="10" width="300" height="45"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-s1-9cO">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNV-Y1-k6C">
                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUO-AA-iJn">
+                                        <rect key="frame" x="5" y="5" width="35" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gLq-s1-9cO" secondAttribute="height" multiplier="1:1" id="oe7-fF-0LR"/>
+                                    <constraint firstItem="qUO-AA-iJn" firstAttribute="leading" secondItem="gNV-Y1-k6C" secondAttribute="leading" constant="5" id="WbZ-W7-DNu"/>
+                                    <constraint firstAttribute="trailing" secondItem="qUO-AA-iJn" secondAttribute="trailing" constant="5" id="Ysn-y9-74J"/>
+                                    <constraint firstAttribute="bottom" secondItem="qUO-AA-iJn" secondAttribute="bottom" constant="5" id="uoj-wF-ZGE"/>
+                                    <constraint firstAttribute="width" secondItem="gNV-Y1-k6C" secondAttribute="height" multiplier="1:1" id="yQP-6O-t9G"/>
+                                    <constraint firstItem="qUO-AA-iJn" firstAttribute="top" secondItem="gNV-Y1-k6C" secondAttribute="top" constant="5" id="z3I-5t-uxZ"/>
                                 </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mk8-Qr-6Fs">
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-Lk-Toe">
                                 <rect key="frame" x="55" y="0.0" width="245" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mk8-Qr-6Fs">
+                                        <rect key="frame" x="0.0" y="5" width="245" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mk8-Qr-6Fs" secondAttribute="bottom" constant="5" id="1fD-jT-l5I"/>
+                                    <constraint firstAttribute="trailing" secondItem="mk8-Qr-6Fs" secondAttribute="trailing" id="Mfp-BZ-y5x"/>
+                                    <constraint firstItem="mk8-Qr-6Fs" firstAttribute="top" secondItem="kyi-Lk-Toe" secondAttribute="top" constant="5" id="gRT-cf-fbg"/>
+                                    <constraint firstItem="mk8-Qr-6Fs" firstAttribute="leading" secondItem="kyi-Lk-Toe" secondAttribute="leading" id="io5-rU-m6U"/>
+                                </constraints>
+                            </view>
                         </subviews>
                     </stackView>
                 </subviews>
@@ -41,7 +67,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardLabel" destination="qUO-AA-iJn" id="9d7-jb-KbU"/>
+                <outlet property="cardView" destination="gNV-Y1-k6C" id="U6a-mb-dkC"/>
+                <outlet property="commandTextField" destination="mk8-Qr-6Fs" id="9tI-MZ-yos"/>
+            </connections>
             <point key="canvasLocation" x="109.9236641221374" y="27.112676056338028"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -144,8 +144,6 @@ class ViewController: UIViewController {
   }
 
   func setupNavigationBar() {
-    self.navigationController?.navigationBar.prefersLargeTitles = true
-    self.navigationItem.largeTitleDisplayMode = .always
     let addButton = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(addIconDidTap))
     addButton.tintColor = .white
     self.navigationItem.rightBarButtonItem = addButton

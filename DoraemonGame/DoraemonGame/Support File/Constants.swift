@@ -93,4 +93,8 @@ enum Constant {
     static let commandTitle = "Command👑"
   }
 
+  enum Wording {
+    static let cardArray = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+  }
+
 }
