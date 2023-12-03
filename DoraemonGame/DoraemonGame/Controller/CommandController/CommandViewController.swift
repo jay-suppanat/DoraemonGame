@@ -37,8 +37,41 @@ class CommandViewController: UIViewController {
                ]
                navigationBar.titleTextAttributes = titleAttributes
            }
-    self.title = Constant.Title.commandTitle
 
+    let resetButton = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(resetDidTap))
+
+    self.title = Constant.Title.commandTitle
+    self.navigationItem.rightBarButtonItem = resetButton
+  }
+
+  @objc func resetDidTap() {
+    let alert = UIAlertController(
+        title: "Are you want to Reset Command to Default ?",
+        message: "",
+        preferredStyle: .alert)
+
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+    let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] action in
+      UserDefault.shared.setCommand2(command2: Constant.Command.command2)
+      UserDefault.shared.setCommand3(command3: Constant.Command.command3)
+      UserDefault.shared.setCommand4(command4: Constant.Command.command4)
+      UserDefault.shared.setCommand5(command5: Constant.Command.command5)
+      UserDefault.shared.setCommand6(command6: Constant.Command.command6)
+      UserDefault.shared.setCommand7(command7: Constant.Command.command7)
+      UserDefault.shared.setCommand8(command8: Constant.Command.command8)
+      UserDefault.shared.setCommand9(command9: Constant.Command.command9)
+      UserDefault.shared.setCommand10(command10: Constant.Command.command10)
+      UserDefault.shared.setCommandJ(commandJ: Constant.Command.commandJ)
+      UserDefault.shared.setCommandQ(commandQ: Constant.Command.commandQ)
+      UserDefault.shared.setCommandK(commandK: Constant.Command.commandK)
+      UserDefault.shared.setCommandA(commandA: Constant.Command.commandA)
+      self?.navigationController?.popToRootViewController(animated: true)
+    }
+
+    alert.addAction(cancelAction)
+    alert.addAction(okAction)
+    self.present(alert, animated: true)
   }
 
   func setupTableView() {
@@ -59,7 +92,10 @@ extension CommandViewController: UITableViewDelegate {
         preferredStyle: .alert)
     alert.addTextField { (textField) in textField.placeholder = "New Command" }
 
-    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+      self.tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+
     let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] action in
                if let textField = alert.textFields?.first,
                   let newText = textField.text {
@@ -140,7 +176,5 @@ extension CommandViewController: UITableViewDataSource {
     cell.setupData(card: Constant.Wording.cardArray[indexPath.row], command: commandArray[indexPath.row])
     return cell
   }
-  
-
 }
 
