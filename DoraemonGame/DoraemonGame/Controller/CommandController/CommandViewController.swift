@@ -11,9 +11,9 @@ class CommandViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.setupNavigationBar()
-      self.setupTableView()
-      self.applyTheme()
+        self.setupNavigationBar()
+        self.setupTableView()
+        self.applyTheme()
     }
 
 // MARK: Internal
