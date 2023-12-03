@@ -69,51 +69,51 @@ extension CommandViewController: UITableViewDelegate {
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 1:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand3(command3: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 2:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand4(command4: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 3:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand5(command5: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 4:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand6(command6: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 5:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand7(command7: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 6:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand8(command8: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 7:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand9(command9: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 8:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommand10(command10: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 9:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommandJ(commandJ: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 10:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommandQ(commandQ: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 11:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommandK(commandK: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  case 12:
-                   UserDefault.shared.setCommand2(command2: newText)
+                   UserDefault.shared.setCommandA(commandA: newText)
                    self?.commandArray[indexPath.row] = newText
                    self?.tableView.reloadRows(at: [indexPath], with: .automatic)
                  default:

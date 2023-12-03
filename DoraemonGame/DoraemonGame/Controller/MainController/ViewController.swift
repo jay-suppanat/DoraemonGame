@@ -36,7 +36,7 @@ class ViewController: UIViewController {
       if self.cardDeck.cardDeck.kingCard.isEmpty {
           self.present(AppCallers().showCommandAlert(title: Constant.Alert.gameEnd, message: Constant.Alert.pleaseReset, buttonTitle: "OK"), animated: true)
       } else {
-          self.openCard()
+        self.openCard()
       }
   }
 
@@ -47,6 +47,7 @@ class ViewController: UIViewController {
       self.cardDeck.cardDeck.cardDeck.removeAll()
       self.cardDeck.cardDeck.cardDeck = Constant.Card.mainCardDeck
       self.cardDeck.cardDeck.kingCard = Constant.Card.mainKingCard
+      self.isOpen = false
   }
 
   // MARK: Logic
@@ -88,6 +89,9 @@ class ViewController: UIViewController {
           self.cardDeck.cardDeck.cardDeck.remove(at: randomIndex)
       }
       cardDeckIndex -= 1
+      print("Card Number: \(self.cardDeck.cardDeck.cardDeck.count) / 52")
+      print("Your Card: \(cardResult)")
+      print("Card Deck: \(self.cardDeck.cardDeck.cardDeck)")
       return cardResult
   }
 
