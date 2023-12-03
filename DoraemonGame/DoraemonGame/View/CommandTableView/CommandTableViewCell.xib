@@ -42,18 +42,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-Lk-Toe">
                                 <rect key="frame" x="55" y="0.0" width="245" height="45"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mk8-Qr-6Fs">
-                                        <rect key="frame" x="0.0" y="5" width="245" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-mv-iyX">
+                                        <rect key="frame" x="0.0" y="10" width="245" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mk8-Qr-6Fs" secondAttribute="bottom" constant="5" id="1fD-jT-l5I"/>
-                                    <constraint firstAttribute="trailing" secondItem="mk8-Qr-6Fs" secondAttribute="trailing" id="Mfp-BZ-y5x"/>
-                                    <constraint firstItem="mk8-Qr-6Fs" firstAttribute="top" secondItem="kyi-Lk-Toe" secondAttribute="top" constant="5" id="gRT-cf-fbg"/>
-                                    <constraint firstItem="mk8-Qr-6Fs" firstAttribute="leading" secondItem="kyi-Lk-Toe" secondAttribute="leading" id="io5-rU-m6U"/>
+                                    <constraint firstItem="zBZ-mv-iyX" firstAttribute="leading" secondItem="kyi-Lk-Toe" secondAttribute="leading" id="DWD-wj-Npq"/>
+                                    <constraint firstAttribute="bottom" secondItem="zBZ-mv-iyX" secondAttribute="bottom" constant="10" id="HwH-7w-YJW"/>
+                                    <constraint firstAttribute="trailing" secondItem="zBZ-mv-iyX" secondAttribute="trailing" id="QS5-vR-gzI"/>
+                                    <constraint firstItem="zBZ-mv-iyX" firstAttribute="top" secondItem="kyi-Lk-Toe" secondAttribute="top" constant="10" id="SF2-Td-zer"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -70,7 +71,7 @@
             <connections>
                 <outlet property="cardLabel" destination="qUO-AA-iJn" id="9d7-jb-KbU"/>
                 <outlet property="cardView" destination="gNV-Y1-k6C" id="U6a-mb-dkC"/>
-                <outlet property="commandTextField" destination="mk8-Qr-6Fs" id="9tI-MZ-yos"/>
+                <outlet property="commandLabel" destination="zBZ-mv-iyX" id="mz7-47-kAw"/>
             </connections>
             <point key="canvasLocation" x="109.9236641221374" y="27.112676056338028"/>
         </tableViewCell>

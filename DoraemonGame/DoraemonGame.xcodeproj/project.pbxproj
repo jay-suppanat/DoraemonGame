@@ -24,6 +24,8 @@
 		656E2D542B1BB5020033890F /* CommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E2D522B1BB5020033890F /* CommandViewController.xib */; };
 		656E2D582B1BB62C0033890F /* CommandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D562B1BB62C0033890F /* CommandTableViewCell.swift */; };
 		656E2D592B1BB62C0033890F /* CommandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E2D572B1BB62C0033890F /* CommandTableViewCell.xib */; };
+		656E2D642B1C5B470033890F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D632B1C5B470033890F /* UserDefaults.swift */; };
+		656E2D662B1C5B540033890F /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2D652B1C5B540033890F /* UserDefaultsKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		656E2D522B1BB5020033890F /* CommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommandViewController.xib; sourceTree = "<group>"; };
 		656E2D562B1BB62C0033890F /* CommandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTableViewCell.swift; sourceTree = "<group>"; };
 		656E2D572B1BB62C0033890F /* CommandTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommandTableViewCell.xib; sourceTree = "<group>"; };
+		656E2D632B1C5B470033890F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		656E2D652B1C5B540033890F /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		656E2D432B1BA5D10033890F /* Support File */ = {
 			isa = PBXGroup;
 			children = (
+				656E2D622B1C5B390033890F /* UserDefaults */,
 				653FA7F12B1BA0840046F3E9 /* AppDelegate.swift */,
 				653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */,
 				656E2D412B1BA50D0033890F /* Constants.swift */,
@@ -204,6 +209,15 @@
 				656E2D572B1BB62C0033890F /* CommandTableViewCell.xib */,
 			);
 			path = CommandTableView;
+			sourceTree = "<group>";
+		};
+		656E2D622B1C5B390033890F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				656E2D632B1C5B470033890F /* UserDefaults.swift */,
+				656E2D652B1C5B540033890F /* UserDefaultsKey.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +363,9 @@
 				653FA7F22B1BA0840046F3E9 /* AppDelegate.swift in Sources */,
 				653FA7F42B1BA0840046F3E9 /* SceneDelegate.swift in Sources */,
 				656E2D422B1BA50D0033890F /* Constants.swift in Sources */,
+				656E2D662B1C5B540033890F /* UserDefaultsKey.swift in Sources */,
 				656E2D532B1BB5020033890F /* CommandViewController.swift in Sources */,
+				656E2D642B1C5B470033890F /* UserDefaults.swift in Sources */,
 				656E2D4C2B1BA9840033890F /* AppCallers.swift in Sources */,
 				656E2D492B1BA8450033890F /* CardModel.swift in Sources */,
 				656E2D582B1BB62C0033890F /* CommandTableViewCell.swift in Sources */,

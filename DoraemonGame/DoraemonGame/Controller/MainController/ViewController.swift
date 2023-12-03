@@ -96,31 +96,31 @@ class ViewController: UIViewController {
         Haptic.impact(.heavy).generate()
         switch self.cardName {
         case let str where str.contains("2"):
-          self.present(AppCallers().showCommandAlert(title: "2", message: Constant.Command.command2, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "2", message: UserDefault.shared.getCommand2(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("3"):
-          self.present(AppCallers().showCommandAlert(title: "3", message: Constant.Command.command3, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "3", message: UserDefault.shared.getCommand3(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("4"):
-          self.present(AppCallers().showCommandAlert(title: "4", message: Constant.Command.command4, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "4", message: UserDefault.shared.getCommand4(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("5"):
-          self.present(AppCallers().showCommandAlert(title: "5", message: Constant.Command.command5, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "5", message: UserDefault.shared.getCommand5(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("6"):
-          self.present(AppCallers().showCommandAlert(title: "6", message: Constant.Command.command6, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "6", message: UserDefault.shared.getCommand6(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("7"):
-          self.present(AppCallers().showCommandAlert(title: "7", message: Constant.Command.command7, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "7", message: UserDefault.shared.getCommand7(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("8"):
-          self.present(AppCallers().showCommandAlert(title: "8", message: Constant.Command.command8, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "8", message: UserDefault.shared.getCommand8(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("9"):
-          self.present(AppCallers().showCommandAlert(title: "9", message: Constant.Command.command9, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "9", message: UserDefault.shared.getCommand9(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("0"):
-          self.present(AppCallers().showCommandAlert(title: "0", message: Constant.Command.command10, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "0", message: UserDefault.shared.getCommand10(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("J"):
-          self.present(AppCallers().showCommandAlert(title: "J", message: Constant.Command.commandJ, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "J", message: UserDefault.shared.getCommandJ(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("Q"):
-          self.present(AppCallers().showCommandAlert(title: "Q", message: Constant.Command.commandQ, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "Q", message: UserDefault.shared.getCommandQ(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("K"):
-          self.present(AppCallers().showCommandAlert(title: "K", message: Constant.Command.commandK, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "K", message: UserDefault.shared.getCommandK(), buttonTitle: "OK"), animated: true)
         case let str where str.contains("A"):
-          self.present(AppCallers().showCommandAlert(title: "A", message: Constant.Command.commandA, buttonTitle: "OK"), animated: true)
+          self.present(AppCallers().showCommandAlert(title: "A", message: UserDefault.shared.getCommandA(), buttonTitle: "OK"), animated: true)
         default:
             print("🚨 showCommand Function Error")
         }

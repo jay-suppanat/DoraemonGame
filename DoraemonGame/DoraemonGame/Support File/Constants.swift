@@ -81,6 +81,39 @@ enum Constant {
     static let commandQ = "สั่งใครกินก็ได้"
     static let commandK = "K ใบแรก: สั่งว่าให้ทำไร\nK ใบสอง: จำนวนเท่าไร\nK ใบสาม: ทำที่ไหน\nK ใบสี่: ให้ใครทำ"
     static let commandA = "กินหมดแก้ว"
+
+    static let commandArray = [
+      UserDefault.shared.getCommand2(),
+      UserDefault.shared.getCommand3(),
+      UserDefault.shared.getCommand4(),
+      UserDefault.shared.getCommand5(),
+      UserDefault.shared.getCommand6(),
+      UserDefault.shared.getCommand7(),
+      UserDefault.shared.getCommand8(),
+      UserDefault.shared.getCommand9(),
+      UserDefault.shared.getCommand10(),
+      UserDefault.shared.getCommandJ(),
+      UserDefault.shared.getCommandQ(),
+      UserDefault.shared.getCommandK(),
+      UserDefault.shared.getCommandA(),
+    ]
+
+//    static let commandArray2 = [
+//      UserDefault.shared.getCommand2(),
+//      "กินครึ่งแก้ว",
+//      "คนทางซ้ายกิน",
+//      "คนทางขวากิน",
+//      "เลือกใครเป็นบัดดี้ก็ได้\nหรือ\nยกเลิกการเป็นบัดดี้",
+//      "เลือกหมวดหมู่มา 1 หมวด\nใครตอบผิด ตอบซ้ำ\nตอบไม่ได้ กินหมดแก้ว",
+//      "เลือกตัวเลขมา 1 ตัว\nห้ามพูดเลขที่มีเลขที่เลือก\nหรือหารด้วยตัวเลขที่เลือกลงตัว",
+//      "เก็บการ์ดนี้ไว้\nเมื่อใช้จะสามารถไปเข้าห้องน้ำได้\nใช้ตอนไหนก็ได้",
+//      "ทำท่าจับคางตอนไหนก็ได้\nแล้วให้คนอื่นทำตาม\nใครทำคนสุดท้าย กินหมดแก้ว",
+//       "สร้างคำขึ้นมา 1 คำ ห้ามพูดคำนี้\nจนกว่าเกมจะจบ",
+//      "เลือกใบ้ใครก็ได้ 1 คน\n(จะยกเลิกเมื่อมีคนคุยด้วย)",
+//      "สั่งใครกินก็ได้",
+//      "K ใบแรก: สั่งว่าให้ทำไร\nK ใบสอง: จำนวนเท่าไร\nK ใบสาม: ทำที่ไหน\nK ใบสี่: ให้ใครทำ",
+//      "กินหมดแก้ว"
+//    ]
   }
 
   enum Alert {

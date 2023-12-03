@@ -26,20 +26,22 @@ class CommandTableViewCell: UITableViewCell {
 
   @IBOutlet weak var cardView: UIView!
   @IBOutlet weak var cardLabel: UILabel!
-  @IBOutlet weak var commandTextField: UITextField!
-
+  @IBOutlet weak var commandLabel: UILabel!
+  
   // MARK: UserInterface
 
   func setupCell() {
     self.contentView.backgroundColor = .black
-    self.cardView.layer.cornerRadius = 22
+    self.cardView.layer.cornerRadius = 20
     self.cardView.backgroundColor = .systemGray5
     self.cardView.clipsToBounds = true
     self.cardLabel.textAlignment = .center
+    self.commandLabel.textColor = .white
   }
 
-  func setupData(card: String) {
+  func setupData(card: String, command: String) {
     self.cardLabel.text = card
+    self.commandLabel.text = command
   }
 
 }
