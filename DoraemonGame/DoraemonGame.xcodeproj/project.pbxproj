@@ -153,8 +153,8 @@
 				653FA7F12B1BA0840046F3E9 /* AppDelegate.swift */,
 				653FA7F32B1BA0840046F3E9 /* SceneDelegate.swift */,
 				656E2D412B1BA50D0033890F /* Constants.swift */,
-				653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */,
 				656E2D4B2B1BA9840033890F /* AppCallers.swift */,
+				653FA7FA2B1BA0850046F3E9 /* Assets.xcassets */,
 			);
 			path = "Support File";
 			sourceTree = "<group>";
